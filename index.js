@@ -59,9 +59,9 @@ function insertintodynamodb({username,token,type,expirationTime}){
 
 function sendEmailtemplate({username,token}){
 
-    const msg = `<a href="http://prod.yongjishen.me/v1/verifyUserEmail?email=${username}&token=${token}">Click this to activate account</a>
+    const msg = `<a href="https://prod.yongjishen.me/v1/verifyUserEmail?email=${username}&token=${token}">Click this to activate account</a>
                 <br/>
-                <p>http://prod.yongjishen.me/v1/verifyUserEmail?email=${username}&token=${token}</p>`
+                <p>https://prod.yongjishen.me/v1/verifyUserEmail?email=${username}&token=${token}</p>`
     const params ={
         Destination:{
             ToAddresses:[
